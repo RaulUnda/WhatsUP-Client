@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ap_main" prefHeight="460" prefWidth="500" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whatsupclient.Controller">
+    <children>
+        <Button fx:id="button_send" layoutX="402.0" layoutY="339.0" text="Enviar" />
+        <Button fx:id="button_plain" layoutX="40" layoutY="400" text="Texto Plano" />
+        <Button fx:id="button_sym" layoutX="150" layoutY="400" text="Encriptacion Simetrica" />
+        <Button fx:id="button_asym" layoutX="300" layoutY="400" text="Encriptacion Asimetrica" />
+        <TextField fx:id="tf_message" layoutX="30" layoutY="338" prefHeight="26" prefWidth="362.0" />
+        <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="260" prefWidth="420">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="250" prefWidth="414" />
+            </content>
+        </ScrollPane>
+        <Label layoutX="134.0" layoutY="24.0" text="WhatsUP Messenger">
+            <font>
+                <Font name="Lucida Sans Unicode" size="24" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
